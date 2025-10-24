@@ -1,0 +1,10 @@
+Job Title: AI Engineer
+
+We are seeking a skilled AI Engineer with experience in machine learning, deep learning, and natural language processing. 
+Responsibilities include building intelligent systems, optimizing model performance, and deploying ML models to production.
+
+Requirements:
+- Proficiency in Python and frameworks like TensorFlow or PyTorch
+- Experience with NLP, transformers, or LLMs
+- Understanding of data preprocessing, model evaluation, and vector databases
+- Strong analytical and problem-solving skills

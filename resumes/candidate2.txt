@@ -1,0 +1,6 @@
+Name: Priya Mehta
+Email: priya.mehta@email.com
+
+Software Engineer with experience in C++ and web development.
+Interested in learning about AI and data science.
+Strong debugging and teamwork skills.

@@ -1,0 +1,6 @@
+Name: Arjun Patel
+Email: arjun.patel@email.com
+
+Data Scientist specializing in NLP and computer vision.
+Proficient in Python, PyTorch, and Scikit-learn.
+Built chatbots and image classifiers using deep learning architectures.

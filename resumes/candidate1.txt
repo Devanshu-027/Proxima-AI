@@ -1,0 +1,6 @@
+Name: Rohan Sharma
+Email: rohan.sharma@email.com
+
+Experienced Python developer skilled in machine learning and deep learning. 
+Worked on several NLP projects using Hugging Face Transformers and TensorFlow.
+Familiar with deploying AI models on cloud platforms.
