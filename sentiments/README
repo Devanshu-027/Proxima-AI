@@ -1,0 +1,73 @@
+Sentiment Analyzer: Detailed Workflow
+=====================================
+
+Project Overview:
+-----------------
+The Sentiment Analyzer is an AI-powered tool designed to classify text data in CSV files by sentiment. 
+It leverages pre-trained transformer models from Hugging Face, allowing users to process batches 
+of reviews and generate actionable insights through CSV outputs and visualization charts.
+
+Purpose:
+--------
+- Demonstrate sentiment analysis with modern NLP models.
+- Provide a tool for analyzing large sets of text efficiently.
+- Educate on model behavior, preprocessing, and visualization.
+- Showcase professional Python coding practices in AI pipelines.
+
+Key Components & Workflow:
+--------------------------
+1. Input:
+   - CSV file with a mandatory 'review' column.
+   - Optionally, the user can specify a Hugging Face transformer model.
+
+2. Data Loading & Validation:
+   - CSV file is read using pandas.
+   - Validation ensures that 'review' column exists; otherwise, the program exits with a clear error.
+   - Missing reviews are handled as empty strings.
+
+3. Sentiment Analysis:
+   - Hugging Face pipeline 'sentiment-analysis' is used.
+   - Model (default: 'distilbert-base-uncased-finetuned-sst-2-english') encodes reviews.
+   - Each review is truncated to 512 characters to respect model limitations.
+   - Iterative analysis with tqdm provides a progress bar.
+   - Fallbacks ('UNKNOWN') are used for any errors in processing.
+
+4. Results Processing:
+   - Sentiment labels are appended to the original DataFrame.
+   - Both numeric counts and percentages for each sentiment are calculated.
+
+5. Output:
+   - Updated CSV file saved as '{original_filename}_with_sentiment.csv'.
+   - Bar chart 'sentiment_distribution.png' visualizes sentiment distribution.
+   - Console prints summary statistics including counts and percentages.
+
+6. Error Handling:
+   - Handles missing files, invalid CSV formats, empty 'review' column.
+   - Handles exceptions during model loading and inference gracefully.
+   - Warns and skips problematic reviews instead of crashing.
+
+7. Customization:
+   - Users can provide alternative Hugging Face sentiment models.
+   - Color scheme of the chart can be adjusted.
+   - Can be extended for multi-class sentiment, multilingual models, or real-time streaming data.
+
+8. Limitations:
+   - Pre-trained models may carry biases or fail on domain-specific text.
+   - Batch processing only; not real-time.
+   - Maximum sequence length is 512 tokens; longer text is truncated.
+   - Default model only provides binary sentiment; fine-tuning is needed for more nuanced labels.
+
+Author:
+-------
+[Your Name/Username]
+
+License:
+--------
+MIT
+
+Summary:
+--------
+The Sentiment Analyzer provides a full pipeline from raw text data to actionable insights. 
+It combines data validation, AI inference, results aggregation, and visualization into a 
+professional-grade Python application. This workflow can be expanded for larger datasets, 
+different transformer models, or integrated into production environments.

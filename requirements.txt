@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
+tabulate
+tqdm
+click
+sentence-transformers
+transformers
+yfinance
+tensorflow
+openpyxl
