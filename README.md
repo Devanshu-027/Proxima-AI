@@ -94,4 +94,83 @@ Projects
 
 Getting Started
 ---------------
-1. Clone the repository:
+Follow these steps to set up and run Proxima AI locally.
+
+### 1. Clone the repository
+git clone https://github.com/yourusername/proxima-ai.git
+cd proxima-ai
+
+shell
+Copy code
+
+### 2. Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate # Linux/Mac
+venv\Scripts\activate # Windows
+
+shell
+Copy code
+
+### 3. Install required packages
+pip install -r requirements.txt
+
+sql
+Copy code
+*Note: Each project may have specific dependencies. See the respective folder for details.*
+
+### 4. Run a project
+Navigate to the project folder and execute the script as described in the “Projects” section. Example:
+python resumes/resume_screener.py --jd job_desc.txt --resumes resumes_folder/
+
+makefile
+Copy code
+
+### 5. Optional: Jupyter Notebook
+Some projects may include notebooks for visualization. You can launch:
+jupyter notebook
+
+markdown
+Copy code
+and open the corresponding `.ipynb` files.
+
+Requirements
+------------
+- Python 3.8 or higher
+- Packages (included in `requirements.txt` below):
+  - `transformers`
+  - `sentence-transformers`
+  - `numpy`
+  - `pandas`
+  - `matplotlib`
+  - `scikit-learn`
+  - `tensorflow`
+  - `torch`
+  - `yfinance`
+  - `flask`
+  - `streamlit`
+
+Contributing
+------------
+Contributions are welcome! You can:
+- Report bugs or issues.
+- Suggest new AI projects.
+- Submit pull requests with improvements or new features.
+
+Please ensure code style consistency and add comments for clarity.
+
+License
+-------
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Contact
+-------
+- **Developer:** Devanshu Kumar
+- **Email:** your_email@example.com
+- **GitHub:** https://github.com/yourusername
+
+Acknowledgements
+----------------
+- Hugging Face Transformers
+- Yahoo Finance API
+- OpenAI API (for chatbot inspiration)
+- Python community for open-source support
